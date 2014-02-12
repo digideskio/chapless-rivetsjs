@@ -1,0 +1,22 @@
+{
+  "description": "Chaplin view and unit test",
+  "files": [
+    {
+      "from": "index.coffee.hbs",
+      "to": "app/views/{{name}}/index.coffee"
+    },
+    {
+      "from": "style.less.hbs",
+      "to": "app/views/{{name}}/style.less"
+    },
+    {
+      "from": "template.eco.hbs",
+      "to": "app/views/{{name}}/template.eco"
+    },
+    {
+      "from": "test.coffee.hbs",
+      "to": "test/code/views/{{name}}.coffee"
+    }
+  ],
+  "dependencies": []
+}

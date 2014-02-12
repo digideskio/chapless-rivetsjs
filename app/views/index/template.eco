@@ -1,0 +1,6 @@
+<h1>Reactive Programming with Rivets</h1>
+
+<p>{model:name}</p>
+<p>{model:computed}</p>
+
+<p class="lead text-muted">Easy right? Now try out <a href="/invoice">an example using two-way bindings</a> and formatters.</p>

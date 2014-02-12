@@ -1,0 +1,11 @@
+{{#camelize}}{{name}}{{/camelize}}Controller = require('controllers/{{#dasherize}}{{name}}{{/dasherize}}')
+
+describe '{{#camelize}}{{name}}{{/camelize}}Controller', ->
+
+  beforeEach ->
+    @{{#lowercamelize}}{{name}}{{/lowercamelize}}Controller = new {{#camelize}}{{name}}{{/camelize}}Controller
+
+
+
+  afterEach ->
+    @{{#lowercamelize}}{{name}}{{/lowercamelize}}Controller.dispose()

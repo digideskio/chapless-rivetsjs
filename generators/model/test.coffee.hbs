@@ -1,0 +1,11 @@
+{{#camelize}}{{name}}{{/camelize}} = require('models/{{#dasherize}}{{name}}{{/dasherize}}')
+
+describe '{{#camelize}}{{name}}{{/camelize}}', ->
+
+  beforeEach ->
+    @{{#lowercamelize}}{{name}}{{/lowercamelize}} = new {{#camelize}}{{name}}{{/camelize}}
+
+
+
+  afterEach ->
+    @{{#lowercamelize}}{{name}}{{/lowercamelize}}.dispose()

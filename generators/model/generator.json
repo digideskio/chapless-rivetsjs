@@ -1,0 +1,14 @@
+{
+  "description": "Chaplin view and unit test",
+  "files": [
+    {
+      "from": "model.coffee.hbs",
+      "to": "app/models/{{#dasherize}}{{name}}{{/dasherize}}.coffee"
+    },
+    {
+      "from": "test.coffee.hbs",
+      "to": "test/code/models/{{#dasherize}}{{name}}{{/dasherize}}.coffee"
+    }
+  ],
+  "dependencies": []
+}
