@@ -5,7 +5,9 @@ initialize = ->
     Backbone.Deferred = ->
       new Davy
 
-  # Set up Rivets if available
+  # Set up Rivets if available and create
+  # an adapter which listens for Backbone
+  # events when using ':' from templates
   rivets?.adapters[':'] =
     subscribe: (obj, keypath, callback) ->
       obj.on("change:#{keypath}", callback)
