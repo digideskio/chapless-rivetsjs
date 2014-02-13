@@ -1,4 +1,4 @@
-Collection = require('models/base/collection') # Base collection extends Backbone.Collection
+Collection = require('models/base/collection') # Base collection extends Chaplin.Collection
 Product = require('./product') # Relative path to help ensure model moves with collection
 
 module.exports = class Products extends Collection
